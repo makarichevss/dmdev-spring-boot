@@ -28,5 +28,6 @@ class GreetingServiceTest {
     void testGreeting() {
         String expectedMessage = "Hello world!2";
         assertEquals(expectedMessage, greetingService.greet());
+
     }
 }
