@@ -1,5 +1,6 @@
 package org.example.service;
 
+import org.example.IntegrationTestBase;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,9 +10,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@ActiveProfiles("test")
-@SpringBootTest
-class GreetingServiceTest {
+class GreetingServiceTest extends IntegrationTestBase {
 
     @Autowired
     private GreetingService greetingService;

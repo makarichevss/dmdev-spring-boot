@@ -28,6 +28,9 @@ public class EmployeeEntity {
     private String lastName;
     private LocalDate birthDay;
 
+    @Column(name = "salary")
+    private Integer salary;
+
     @ManyToOne
     @JoinColumn(name = "company_id")
     private CompanyEntity company;
