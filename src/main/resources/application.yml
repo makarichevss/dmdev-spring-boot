@@ -4,5 +4,11 @@ spring:
   datasource:
     username: postgres
     password: postgres
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://localhost:5433/company
     driver-class-name: org.postgresql.Driver
+
+  flyway:
+    schemas: public
+    baseline-on-migrate: true
+    baseline-version: 1
+    locations: classpath:db/migration
